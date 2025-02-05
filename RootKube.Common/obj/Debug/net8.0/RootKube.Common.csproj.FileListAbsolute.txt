@@ -1,0 +1,14 @@
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Common\bin\Debug\net8.0\RootKube.Common.deps.json
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Common\bin\Debug\net8.0\RootKube.Common.runtimeconfig.json
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Common\bin\Debug\net8.0\RootKube.Common.dll
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Common\bin\Debug\net8.0\RootKube.Common.pdb
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Common\obj\Debug\net8.0\RootKube.Common.csproj.AssemblyReference.cache
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Common\obj\Debug\net8.0\RootKube.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Common\obj\Debug\net8.0\RootKube.Common.AssemblyInfoInputs.cache
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Common\obj\Debug\net8.0\RootKube.Common.AssemblyInfo.cs
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Common\obj\Debug\net8.0\RootKube.Common.csproj.CoreCompileInputs.cache
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Common\obj\Debug\net8.0\RootKube.Common.dll
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Common\obj\Debug\net8.0\refint\RootKube.Common.dll
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Common\obj\Debug\net8.0\RootKube.Common.pdb
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Common\obj\Debug\net8.0\RootKube.Common.genruntimeconfig.cache
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Common\obj\Debug\net8.0\ref\RootKube.Common.dll

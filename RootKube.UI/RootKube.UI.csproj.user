@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Vistas\Administracion\FrmCrearLocal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Administracion\FrmEditarLocal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Administracion\FrmSeleccionarLocal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Autenticacion\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Autenticacion\FrmRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Comunes\FrmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Comunes\FrmSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Stock\FrmAgregarStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Stock\FrmCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Stock\FrmCrearProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Stock\FrmEditarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Stock\FrmStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

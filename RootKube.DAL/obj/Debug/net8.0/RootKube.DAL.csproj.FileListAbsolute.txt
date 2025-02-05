@@ -1,0 +1,17 @@
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.DAL\bin\Debug\net8.0\RootKube.DAL.deps.json
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.DAL\bin\Debug\net8.0\RootKube.DAL.runtimeconfig.json
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.DAL\bin\Debug\net8.0\RootKube.DAL.dll
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.DAL\bin\Debug\net8.0\RootKube.DAL.pdb
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.DAL\bin\Debug\net8.0\RootKube.Models.dll
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.DAL\bin\Debug\net8.0\RootKube.Models.pdb
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.DAL\obj\Debug\net8.0\RootKube.DAL.csproj.AssemblyReference.cache
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.DAL\obj\Debug\net8.0\RootKube.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.DAL\obj\Debug\net8.0\RootKube.DAL.AssemblyInfoInputs.cache
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.DAL\obj\Debug\net8.0\RootKube.DAL.AssemblyInfo.cs
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.DAL\obj\Debug\net8.0\RootKube.DAL.csproj.CoreCompileInputs.cache
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.DAL\obj\Debug\net8.0\RootKube.DAL.csproj.CopyComplete
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.DAL\obj\Debug\net8.0\RootKube.DAL.dll
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.DAL\obj\Debug\net8.0\refint\RootKube.DAL.dll
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.DAL\obj\Debug\net8.0\RootKube.DAL.pdb
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.DAL\obj\Debug\net8.0\RootKube.DAL.genruntimeconfig.cache
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.DAL\obj\Debug\net8.0\ref\RootKube.DAL.dll

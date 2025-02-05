@@ -1,0 +1,14 @@
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Models\bin\Debug\net8.0\RootKube.Models.deps.json
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Models\bin\Debug\net8.0\RootKube.Models.runtimeconfig.json
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Models\bin\Debug\net8.0\RootKube.Models.dll
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Models\bin\Debug\net8.0\RootKube.Models.pdb
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Models\obj\Debug\net8.0\RootKube.Models.csproj.AssemblyReference.cache
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Models\obj\Debug\net8.0\RootKube.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Models\obj\Debug\net8.0\RootKube.Models.AssemblyInfoInputs.cache
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Models\obj\Debug\net8.0\RootKube.Models.AssemblyInfo.cs
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Models\obj\Debug\net8.0\RootKube.Models.csproj.CoreCompileInputs.cache
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Models\obj\Debug\net8.0\RootKube.Models.dll
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Models\obj\Debug\net8.0\refint\RootKube.Models.dll
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Models\obj\Debug\net8.0\RootKube.Models.pdb
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Models\obj\Debug\net8.0\RootKube.Models.genruntimeconfig.cache
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.Models\obj\Debug\net8.0\ref\RootKube.Models.dll
