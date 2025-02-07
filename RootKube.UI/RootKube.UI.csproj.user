@@ -37,7 +37,13 @@
     <Compile Update="Vistas\Stock\FrmEditarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Vistas\Stock\FrmSeleccionarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Vistas\Stock\FrmStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Ventas\FrmVentas.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

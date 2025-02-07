@@ -167,3 +167,5 @@ C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.UI\obj\Debug\net8.0-windows\r
 C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.UI\obj\Debug\net8.0-windows\RootKube.UI.pdb
 C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.UI\obj\Debug\net8.0-windows\RootKube.UI.genruntimeconfig.cache
 C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.UI\obj\Debug\net8.0-windows\ref\RootKube.UI.dll
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.UI\obj\Debug\net8.0-windows\RootKube.UI.Vistas.Ventas.FrmVentas.resources
+C:\Users\mauro_j2pjkpe\Downloads\rootkube\RootKube.UI\obj\Debug\net8.0-windows\RootKube.UI.Vistas.Stock.FrmSeleccionarProducto.resources

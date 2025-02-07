@@ -7,6 +7,7 @@ using RootKube.Models.Entidades;
 using RootKube.UI.Vistas.Administracion;
 using RootKube.UI.Vistas.Comunes;
 using RootKube.UI.Vistas.Stock;
+using RootKube.UI.Vistas.Ventas;
 
 namespace RootKube.UI
 {
@@ -59,23 +60,25 @@ namespace RootKube.UI
             };
             btnToggle.Click += (s, e) => ToggleMenu();
             pnlNavbar.Controls.Add(btnToggle);
-
             switch (_usuario.Rol)
             {
                 case "Administrador":
                     AgregarBotonNavbar("🏢 Gestión de Locales", () => AbrirFormulario(new FrmSeleccionarLocal()));
                     AgregarBotonNavbar("👥 Gestión de Usuarios", () => MessageBox.Show("Gestión de Usuarios en desarrollo"));
                     AgregarBotonNavbar("📦 Gestión de Stock", () => AbrirFormulario(new FrmStock(_usuario, _idLocal)));
+                    AgregarBotonNavbar("🛒 Ventas", () => AbrirFormulario(new FrmVentas(_usuario, _idLocal)));
                     //AgregarBotonNavbar("📊 Reportes", () => AbrirFormulario(new FrmReportes()));
                     break;
 
                 case "Gerente":
                     AgregarBotonNavbar("📦 Gestión de Stock", () => AbrirFormulario(new FrmStock(_usuario, _idLocal)));
+                    AgregarBotonNavbar("🛒 Ventas", () => AbrirFormulario(new FrmVentas(_usuario, _idLocal)));
                     //AgregarBotonNavbar("📊 Reportes", () => AbrirFormulario(new FrmReportes()));
                     break;
 
                 case "Empleado":
                     AgregarBotonNavbar("📦 Ver Stock", () => AbrirFormulario(new FrmStock(_usuario, _idLocal)));
+                    AgregarBotonNavbar("🛒 Ventas", () => AbrirFormulario(new FrmVentas(_usuario, _idLocal)));
                     break;
 
                 default:
@@ -83,6 +86,7 @@ namespace RootKube.UI
                     this.Close();
                     break;
             }
+
 
             pnlNavbar.Refresh();
         }
