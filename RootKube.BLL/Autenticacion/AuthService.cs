@@ -16,44 +16,78 @@ namespace RootKube.BLL.Autenticacion
             _context = new RootKubeDbContext();
         }
 
-        // 🔹 Método para Autenticar Usuario y Generar Token
-        public Usuario AutenticarUsuario(string correo, string contraseña)
+        // 🔹 Método para Autenticar Usuario y Registrar Sesión
+        public (Usuario, int) AutenticarUsuario(string correo, string contraseña)
         {
             var usuario = _context.Usuarios.FirstOrDefault(u => u.Correo == correo);
             if (usuario == null || usuario.Contraseña != HashContraseña(contraseña))
             {
                 Console.WriteLine("❌ Usuario o contraseña incorrectos.");
-                return null;
+                return (null, 0);
             }
 
-            // Generar Token
+            // Generar Token Seguro
             string token = GenerarToken();
             Token nuevoToken = new Token()
             {
                 IdToken = Guid.NewGuid(),
                 IdUsuario = usuario.IdUsuario,
                 Token1 = token,
-                FechaCreacion = DateTime.Now,
-                FechaExpiracion = DateTime.Now.AddHours(5)
+                FechaCreacion = DateTime.UtcNow,
+                FechaExpiracion = DateTime.UtcNow.AddHours(5)
             };
 
             _context.Tokens.Add(nuevoToken);
             _context.SaveChanges();
 
-            return usuario; // 🔹 Devuelve el usuario en vez de solo un token
+            // 🔹 Registrar Sesión y devolver el ID de la sesión creada
+            int idSesion = RegistrarSesion(usuario.IdUsuario);
+
+            return (usuario, idSesion);
         }
 
+        // 🔹 Método para Registrar Sesión y devolver el ID de la sesión
+        private int RegistrarSesion(int idUsuario)
+        {
+            var sesion = new Sesione()
+            {
+                IdUsuario = idUsuario,
+                FechaInicio = DateTime.UtcNow
+            };
+
+            _context.Sesiones.Add(sesion);
+            _context.SaveChanges();
+
+            return sesion.IdSesion; // 🔹 Retornamos el ID de la sesión creada
+        }
+
+        // 🔹 Método para Cerrar Sesión solo de la sesión activa
+        public bool CerrarSesion(int idUsuario, int idSesion)
+        {
+            var sesionActiva = _context.Sesiones
+                .FirstOrDefault(s => s.IdUsuario == idUsuario && s.IdSesion == idSesion && s.FechaFin == null);
+
+            if (sesionActiva != null)
+            {
+                sesionActiva.FechaFin = DateTime.UtcNow;
+                _context.SaveChanges();
+                Console.WriteLine("✅ Sesión cerrada correctamente.");
+                return true;
+            }
+
+            Console.WriteLine("⚠ No se encontró la sesión activa.");
+            return false;
+        }
 
         // 🔹 Método para Validar Token
         public bool ValidarToken(string token)
         {
-            return _context.Tokens.Any(t => t.Token1 == token && t.FechaExpiracion > DateTime.Now);
+            return _context.Tokens.Any(t => t.Token1 == token && t.FechaExpiracion > DateTime.UtcNow);
         }
 
-        // 🔹 Método para Registrar Usuario (con local si no es administrador)
+        // 🔹 Método para Registrar Usuario
         public bool RegistrarUsuario(string nombre, string correo, string contraseña, string claveProducto, string rol, int? idLocal)
         {
-            // 🔸 Verificar si la clave del producto es válida
             var claveValida = _context.ClavesProductos.FirstOrDefault(c => c.Clave == claveProducto);
             if (claveValida == null)
             {
@@ -61,30 +95,27 @@ namespace RootKube.BLL.Autenticacion
                 return false;
             }
 
-            // 🔸 Verificar si el usuario ya existe por correo
             if (_context.Usuarios.Any(u => u.Correo == correo))
             {
                 Console.WriteLine("❌ El correo ya está registrado.");
                 return false;
             }
 
-            // 🔸 Hash de la contraseña antes de guardarla
+            // 🔹 Hash de la contraseña
             string contraseñaHash = HashContraseña(contraseña);
 
-            // 🔸 Crear nuevo usuario
             Usuario nuevoUsuario = new Usuario()
             {
                 Nombre = nombre,
                 Correo = correo,
                 Contraseña = contraseñaHash,
                 Rol = rol,
-                FechaCreacion = DateTime.Now
+                FechaCreacion = DateTime.UtcNow
             };
 
             _context.Usuarios.Add(nuevoUsuario);
-            _context.SaveChanges(); // Guardar primero el usuario para obtener su ID
+            _context.SaveChanges();
 
-            // 🔸 Si el usuario NO es Administrador, se asigna a un local
             if (rol != "Administrador" && idLocal.HasValue)
             {
                 UsuarioLocale nuevaRelacion = new UsuarioLocale()
@@ -93,11 +124,20 @@ namespace RootKube.BLL.Autenticacion
                     IdLocal = idLocal.Value
                 };
                 _context.UsuarioLocales.Add(nuevaRelacion);
-                _context.SaveChanges(); // Guardar la relación usuario-local
+                _context.SaveChanges();
             }
 
             Console.WriteLine("✅ Usuario registrado correctamente.");
             return true;
+        }
+
+        // 🔹 Método para Limpiar Tokens Expirados
+        public void LimpiarTokensExpirados()
+        {
+            var tokensExpirados = _context.Tokens.Where(t => t.FechaExpiracion < DateTime.UtcNow).ToList();
+            _context.Tokens.RemoveRange(tokensExpirados);
+            _context.SaveChanges();
+            Console.WriteLine($"🧹 {tokensExpirados.Count} tokens expirados eliminados.");
         }
 
         // 🔹 Método para Hash de Contraseñas
@@ -115,15 +155,10 @@ namespace RootKube.BLL.Autenticacion
             }
         }
 
-        // 🔹 Método para Generar Token Aleatorio
+        // 🔹 Método para Generar Token Seguro
         private string GenerarToken()
         {
-            return Guid.NewGuid().ToString();
+            return Convert.ToBase64String(Guid.NewGuid().ToByteArray());
         }
-        public bool ValidarCredenciales(Usuario usuario, string contraseña)
-        {
-            return usuario.Contraseña == HashContraseña(contraseña);
-        }
-
     }
 }

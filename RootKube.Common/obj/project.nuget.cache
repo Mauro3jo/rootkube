@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Bu/YVgp/0qG+SnQM+xTJTGczwpmun7qr/CZFZJZN/mXT0MSgeDWxfFf1m20H+5uHKMszRRLPNQ7fi62DjxUeew==",
+  "dgSpecHash": "5VpXRME7TvHQ7JIX5RAHH7r7WVmnsNgNXYkM/shktWoDz3RdVdZFW9dc3K/j7fvYbJksrqTB8rYyS2ePFLYmPg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.Common\\RootKube.Common.csproj",
+  "projectFilePath": "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.Common\\RootKube.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mauro_j2pjkpe\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\mauro_j2pjkpe\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",

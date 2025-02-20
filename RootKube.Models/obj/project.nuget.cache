@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M1u/842A6N5riUk+1k7E0LZCl5tA53yR1Mo22MX7r8V5/w/AF9fjwt0nDvfqa/LlIBAf/N/ybYDKDZ3cSdthpQ==",
+  "dgSpecHash": "GJbkT2H4qM8kpVI49Ncve2XDAg8yxpLGhowDC3D8/lfGwwBiqbSlHvIy2OhMk7h2ZW5bggvlnBTGFdAJV5E4wQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.Models\\RootKube.Models.csproj",
+  "projectFilePath": "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.Models\\RootKube.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mauro_j2pjkpe\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\mauro_j2pjkpe\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

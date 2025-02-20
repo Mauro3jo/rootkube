@@ -4961,11 +4961,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.UI\\RootKube.UI.csproj",
+      "projectUniqueName": "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.UI\\RootKube.UI.csproj",
       "projectName": "RootKube.UI",
-      "projectPath": "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.UI\\RootKube.UI.csproj",
+      "projectPath": "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.UI\\RootKube.UI.csproj",
       "packagesPath": "C:\\Users\\mauro_j2pjkpe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.UI\\obj\\",
+      "outputPath": "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4986,11 +4986,11 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.BLL\\RootKube.BLL.csproj": {
-              "projectPath": "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.BLL\\RootKube.BLL.csproj"
+            "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.BLL\\RootKube.BLL.csproj": {
+              "projectPath": "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.BLL\\RootKube.BLL.csproj"
             },
-            "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.Models\\RootKube.Models.csproj": {
-              "projectPath": "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.Models\\RootKube.Models.csproj"
+            "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.Models\\RootKube.Models.csproj": {
+              "projectPath": "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.Models\\RootKube.Models.csproj"
             }
           }
         }

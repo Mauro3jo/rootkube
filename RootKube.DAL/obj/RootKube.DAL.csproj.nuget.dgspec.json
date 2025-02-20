@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.DAL\\RootKube.DAL.csproj": {}
+    "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.DAL\\RootKube.DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.DAL\\RootKube.DAL.csproj": {
+    "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.DAL\\RootKube.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.DAL\\RootKube.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.DAL\\RootKube.DAL.csproj",
         "projectName": "RootKube.DAL",
-        "projectPath": "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.DAL\\RootKube.DAL.csproj",
+        "projectPath": "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.DAL\\RootKube.DAL.csproj",
         "packagesPath": "C:\\Users\\mauro_j2pjkpe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.DAL\\obj\\",
+        "outputPath": "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.Models\\RootKube.Models.csproj": {
-                "projectPath": "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.Models\\RootKube.Models.csproj"
+              "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.Models\\RootKube.Models.csproj": {
+                "projectPath": "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.Models\\RootKube.Models.csproj"
               }
             }
           }
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.Models\\RootKube.Models.csproj": {
+    "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.Models\\RootKube.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.Models\\RootKube.Models.csproj",
+        "projectUniqueName": "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.Models\\RootKube.Models.csproj",
         "projectName": "RootKube.Models",
-        "projectPath": "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.Models\\RootKube.Models.csproj",
+        "projectPath": "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.Models\\RootKube.Models.csproj",
         "packagesPath": "C:\\Users\\mauro_j2pjkpe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.Models\\obj\\",
+        "outputPath": "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RootKube.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77a567dad1477c1a6e1f9e0e86668f8614c639ac")]
 [assembly: System.Reflection.AssemblyProductAttribute("RootKube.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RootKube.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

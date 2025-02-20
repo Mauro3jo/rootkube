@@ -8,6 +8,7 @@ using RootKube.UI.Vistas.Administracion;
 using RootKube.UI.Vistas.Comunes;
 using RootKube.UI.Vistas.Stock;
 using RootKube.UI.Vistas.Ventas;
+using RootKube.UI.Vistas.Autenticacion; // 🔹 Importamos FrmLogin
 
 namespace RootKube.UI
 {
@@ -15,15 +16,19 @@ namespace RootKube.UI
     {
         private Usuario _usuario;
         private int _idLocal;
+        private int _idSesion; // 🔹 Guardamos el ID de la sesión activa
         private AuthService _authService;
         private bool menuExpandido = true;
 
-        public FrmPrincipal(Usuario usuario, int idLocal)
+        // 🔹 Ahora `FrmPrincipal` recibe `idSesion`
+        public FrmPrincipal(Usuario usuario, int idLocal, int idSesion)
         {
             InitializeComponent();
             _authService = new AuthService();
             _usuario = usuario;
             _idLocal = idLocal;
+            _idSesion = idSesion; // 🔹 Guardamos el ID de la sesión
+
             MostrarInformacion();
             ConfigurarNavbar();
         }
@@ -60,6 +65,7 @@ namespace RootKube.UI
             };
             btnToggle.Click += (s, e) => ToggleMenu();
             pnlNavbar.Controls.Add(btnToggle);
+
             switch (_usuario.Rol)
             {
                 case "Administrador":
@@ -67,13 +73,11 @@ namespace RootKube.UI
                     AgregarBotonNavbar("👥 Gestión de Usuarios", () => MessageBox.Show("Gestión de Usuarios en desarrollo"));
                     AgregarBotonNavbar("📦 Gestión de Stock", () => AbrirFormulario(new FrmStock(_usuario, _idLocal)));
                     AgregarBotonNavbar("🛒 Ventas", () => AbrirFormulario(new FrmVentas(_usuario, _idLocal)));
-                    //AgregarBotonNavbar("📊 Reportes", () => AbrirFormulario(new FrmReportes()));
                     break;
 
                 case "Gerente":
                     AgregarBotonNavbar("📦 Gestión de Stock", () => AbrirFormulario(new FrmStock(_usuario, _idLocal)));
                     AgregarBotonNavbar("🛒 Ventas", () => AbrirFormulario(new FrmVentas(_usuario, _idLocal)));
-                    //AgregarBotonNavbar("📊 Reportes", () => AbrirFormulario(new FrmReportes()));
                     break;
 
                 case "Empleado":
@@ -87,10 +91,11 @@ namespace RootKube.UI
                     break;
             }
 
+            // 🔹 Agregar botón de Cerrar Sesión
+            AgregarBotonNavbar("🚪 Cerrar Sesión", CerrarSesion);
 
             pnlNavbar.Refresh();
         }
-
 
         private void AgregarBotonNavbar(string texto, Action accion)
         {
@@ -107,11 +112,10 @@ namespace RootKube.UI
                 Padding = new Padding(10)
             };
 
-            // Efecto hover
             btn.MouseEnter += (s, e) => btn.BackColor = System.Drawing.Color.FromArgb(70, 70, 70);
             btn.MouseLeave += (s, e) => btn.BackColor = System.Drawing.Color.FromArgb(50, 50, 50);
-
             btn.Click += (s, e) => accion.Invoke();
+
             pnlNavbar.Controls.Add(btn);
         }
 
@@ -120,7 +124,6 @@ namespace RootKube.UI
             menuExpandido = !menuExpandido;
             pnlNavbar.Width = menuExpandido ? 220 : 50;
 
-            // Cambiar texto de los botones al colapsar
             foreach (Control ctrl in pnlNavbar.Controls)
             {
                 if (ctrl is Button btn)
@@ -132,20 +135,47 @@ namespace RootKube.UI
 
         private void AbrirFormulario(Form formulario)
         {
-            // 🔹 Limpiar el panel antes de cargar un nuevo formulario
             pnlContenido.Controls.Clear();
+            formulario.TopLevel = false;
+            formulario.FormBorderStyle = FormBorderStyle.None;
+            formulario.Dock = DockStyle.Fill;
 
-            // 🔹 Configurar el formulario para que se adapte al panel
-            formulario.TopLevel = false; // No será un formulario independiente
-            formulario.FormBorderStyle = FormBorderStyle.None; // Oculta bordes
-            formulario.Dock = DockStyle.Fill; // Se expande completamente dentro del panel
-
-            // 🔹 Agregar el formulario al `pnlContenido`
             pnlContenido.Controls.Add(formulario);
             formulario.Show();
         }
 
+        // 🔹 Método para Cerrar Sesión con ID de sesión validado
+        private void CerrarSesion()
+        {
+            DialogResult result = MessageBox.Show("¿Seguro que deseas cerrar sesión?", "Cerrar Sesión",
+                                                  MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                // 🔹 Registrar el cierre de sesión SOLO de la sesión actual
+                bool sesionCerrada = _authService.CerrarSesion(_usuario.IdUsuario, _idSesion);
+                if (!sesionCerrada)
+                {
+                    MessageBox.Show("❌ No se pudo cerrar la sesión. Intenta de nuevo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
 
+                // 🔹 Eliminar token del usuario
+                using (var context = new RootKubeDbContext())
+                {
+                    var token = context.Tokens.FirstOrDefault(t => t.IdUsuario == _usuario.IdUsuario);
+                    if (token != null)
+                    {
+                        context.Tokens.Remove(token);
+                        context.SaveChanges();
+                    }
+                }
+
+                // 🔹 Redirigir al Login
+                FrmLogin frmLogin = new FrmLogin();
+                frmLogin.Show();
+                this.Close();
+            }
+        }
 
         private void FrmPrincipal_FormClosing(object sender, FormClosingEventArgs e)
         {

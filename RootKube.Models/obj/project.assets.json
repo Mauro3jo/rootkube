@@ -4900,11 +4900,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.Models\\RootKube.Models.csproj",
+      "projectUniqueName": "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.Models\\RootKube.Models.csproj",
       "projectName": "RootKube.Models",
-      "projectPath": "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.Models\\RootKube.Models.csproj",
+      "projectPath": "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.Models\\RootKube.Models.csproj",
       "packagesPath": "C:\\Users\\mauro_j2pjkpe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.Models\\obj\\",
+      "outputPath": "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

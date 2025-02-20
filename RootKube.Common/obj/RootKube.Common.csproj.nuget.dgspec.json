@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.Common\\RootKube.Common.csproj": {}
+    "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.Common\\RootKube.Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.Common\\RootKube.Common.csproj": {
+    "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.Common\\RootKube.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.Common\\RootKube.Common.csproj",
+        "projectUniqueName": "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.Common\\RootKube.Common.csproj",
         "projectName": "RootKube.Common",
-        "projectPath": "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.Common\\RootKube.Common.csproj",
+        "projectPath": "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.Common\\RootKube.Common.csproj",
         "packagesPath": "C:\\Users\\mauro_j2pjkpe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mauro_j2pjkpe\\Downloads\\rootkube\\RootKube.Common\\obj\\",
+        "outputPath": "C:\\Users\\mauro_j2pjkpe\\OneDrive\\Documentos\\GitHub\\rootkube\\RootKube.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
